@@ -11,7 +11,7 @@ def asteroid(request):
 
 
 @app.route('/asteroid', methods=['POST'])
-def evaluate():
+def evaluateasteroid():
     data = request.get_json()
     logging.info("data sent for evaluation {}".format(data))
     inputValue = data.get("input")
