@@ -17,10 +17,10 @@ def fixedrace():
     for k in range(len(temp)):
         if temp[k] == "Lamont Lasch":
             result = result + temp[k] +"," 
-            temp.remove("Lamont Lasch")
+            temp.remove(temp[k])
         if temp[k] == "Annamarie Ahern":
             result + result + temp[k] +"," 
-            temp.remove("Annamarie Ahern")
+            temp.remove(temp[k])
     random.shuffle(temp)
     for i in range(len(temp)):
         result += temp[i]
