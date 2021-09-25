@@ -16,10 +16,10 @@ def fixedrace():
     result = ""
     for k in range(len(temp)):
         if k == "Ernesto Eno":
-            result += temp[k]
+            result = result + temp[k] +"," 
             temp.remove("Ernesto Eno")
         if k == "Judi Jacquez":
-            result += temp[k]
+            result + result + temp[k] +"," 
             temp.remove("Judi Jacquez")
     random.shuffle(temp)
     for i in range(len(temp)):
