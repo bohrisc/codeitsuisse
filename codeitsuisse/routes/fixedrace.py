@@ -13,7 +13,7 @@ def fixedrace():
     data = request.get_data(as_text=True)
     logging.info("data sent for evaluation {}".format(data))
     temp = data.split(",")
-    temp1 = []
+    temp2 = []
     result = ""
     if "Lamont Lasch" in temp == True:
         result += "Lamont Lasch," 
