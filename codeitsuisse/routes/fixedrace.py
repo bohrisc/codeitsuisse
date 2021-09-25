@@ -15,13 +15,13 @@ def fixedrace():
     temp = data.split(",")
     result = ""
     for k in range(len(temp)):
-        if temp[k] == "Lamont Lasch":
+        if "Lamont Lasch" in temp == True:
             result = result + temp[k] +"," 
             temp.remove(temp[k])
-        if temp[k] == "Annamarie Ahern":
+        if "Annamarie Ahern in temp == True:
             result + result + temp[k] +"," 
             temp.remove(temp[k])
-        if temp[k] == "Regenia Rathburn":
+        if "Regenia Rathburn" in temp == True:
             result + result + temp[k] +"," 
             temp.remove(temp[k])
     random.shuffle(temp)
