@@ -12,7 +12,7 @@ def fixedrace():
     data = request.get_data()
     logging.info("data sent for evaluation {}".format(data))
     temp = data.split(",")
-    result = 0
+    result = ''
     for i in range(len(temp)):
         result = result + temp[i]
         if i = len(temp)-1:
