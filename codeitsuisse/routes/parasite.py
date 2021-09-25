@@ -119,6 +119,5 @@ def evaluateparasite():
         result_dict["p2"] = p2
         result_dict["p3"] = p3
         result_dict["p4"] = p4
-        result.append(result_dict)        
-    logging.info("My result :{}".format(result))             
+        result.append(result_dict)                   
     return json.dumps(result)
