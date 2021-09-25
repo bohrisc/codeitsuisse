@@ -13,21 +13,20 @@ def fixedrace():
     data = request.get_data(as_text=True)
     logging.info("data sent for evaluation {}".format(data))
     temp = data.split(",")
-    temp2 = []
     result = ""
     if "Lamont Lasch" in temp == True:
         result += "Lamont Lasch," 
-        temp2 = temp.remove("Lamont Lasch")
+        temp.remove("Lamont Lasch")
     if "Annamarie Ahern" in temp == True:
         result += "Annamarie Ahern," 
-        temp2 = temp.remove("Annamarie Ahern")
+        temp.remove("Annamarie Ahern")
     if "Regenia Rathburn" in temp == True:
         result += "Regenia Rathburn,"
-        temp2 = temp.remove("Regenia Rathburn")
-    random.shuffle(temp2)
-    for i in range(len(temp2)):
-        result += temp2[i]
-        if i == len(temp2)-1:
+        temp.remove("Regenia Rathburn")
+    random.shuffle(temp)
+    for i in range(len(temp)):
+        result += temp[i]
+        if i == len(temp)-1:
             pass
         else:
             result += ","
