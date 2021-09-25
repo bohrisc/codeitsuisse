@@ -21,6 +21,9 @@ def fixedrace():
         if temp[k] == "Annamarie Ahern":
             result + result + temp[k] +"," 
             temp.remove(temp[k])
+        if temp[k] == "Regenia Rathburn":
+            result + result + temp[k] +"," 
+            temp.remove(temp[k])
     random.shuffle(temp)
     for i in range(len(temp)):
         result += temp[i]
