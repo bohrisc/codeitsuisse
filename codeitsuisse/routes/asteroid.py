@@ -8,7 +8,7 @@ from codeitsuisse import app
 logger = logging.getLogger(__name__)
 
 @app.route('/asteroid', methods=['POST'])
-def evaluateas():
+def asteroid():
     data = request.get_json()
     logging.info("data sent for evaluation {}".format(data))
     inputvalue = data.get("test_cases")
