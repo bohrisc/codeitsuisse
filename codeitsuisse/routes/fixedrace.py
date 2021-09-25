@@ -13,6 +13,7 @@ def fixedrace():
     data = request.get_data()
     logging.info("data sent for evaluation {}".format(data))
     temp = data.split(",")
+    return temp
     random.shuffle(temp)
     result = ""
     for i in range(len(temp)):
