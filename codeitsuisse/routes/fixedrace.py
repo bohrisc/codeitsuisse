@@ -14,6 +14,16 @@ def fixedrace():
     logging.info("data sent for evaluation {}".format(data))
     temp = data.split(",")
     result = ""
+    for k in range(len(temp)):
+        if temp[k] == "Lamont Lasch":
+            result = result + temp[k] +"," 
+            temp.remove(temp[k])
+        if temp[k] == "Annamarie Ahern":
+            result + result + temp[k] +"," 
+            temp.remove(temp[k])
+        if temp[k] == "Regenia Rathburn":
+            result + result + temp[k] +"," 
+            temp.remove(temp[k])
     random.shuffle(temp)
     for i in range(len(temp)):
         result += temp[i]
