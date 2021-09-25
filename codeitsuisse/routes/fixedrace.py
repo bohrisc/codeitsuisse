@@ -17,7 +17,7 @@ def fixedrace():
     if "Lamont Lasch" in temp == True:
         result = result + temp[k] +"," 
         temp.remove(temp[k])
-    if "Annamarie Ahern in temp == True:
+    if "Annamarie Ahern" in temp == True:
         result + result + temp[k] +"," 
         temp.remove(temp[k])
     if "Regenia Rathburn" in temp == True:
