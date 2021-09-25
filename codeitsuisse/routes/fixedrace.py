@@ -1,5 +1,6 @@
 import logging
 import json
+import random
 
 from flask import request, jsonify
 
@@ -12,9 +13,10 @@ def fixedrace():
     data = request.get_data()
     logging.info("data sent for evaluation {}".format(data))
     temp = data.split(",")
+    random.shuffle(temp)
     result = ""
     for i in range(len(temp)):
-        result = result + temp[i]
-        if i = len(temp)-1:
+        result += temp[i]
+        if i == len(temp)-1:
             result += ","
     return result
