@@ -15,9 +15,9 @@ def fixedrace():
     temp = data.split(",")
     result = ""
     for k in range(len(temp)):
-        if k == "Ernesto Eno":
+        if k == "Lamont Lasch":
             result = result + temp[k] +"," 
-            temp.remove("Ernesto Eno")
+            temp.remove("Lamont Lasch")
         if k == "Judi Jacquez":
             result + result + temp[k] +"," 
             temp.remove("Judi Jacquez")
