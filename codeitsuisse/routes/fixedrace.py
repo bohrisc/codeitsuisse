@@ -11,5 +11,5 @@ logger = logging.getLogger(__name__)
 def fixedrace():
     data = request.get_data(as_text=True)
     logging.info("data sent for evaluation {}".format(data))
-    result = ""
+    result = ","
     return result
