@@ -14,12 +14,3 @@ def fixedrace():
     logging.info("data sent for evaluation {}".format(data))
     temp = data.split(",")
     return temp
-    random.shuffle(temp)
-    result = ""
-    for i in range(len(temp)):
-        result += temp[i]
-        if i == len(temp)-1:
-            pass
-        else:
-            result += ","
-    return result
