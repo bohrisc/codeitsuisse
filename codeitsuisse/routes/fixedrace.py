@@ -11,5 +11,10 @@ logger = logging.getLogger(__name__)
 def fixedrace():
     data = request.get_data()
     logging.info("data sent for evaluation {}".format(data))
-    result = ","
+    temp = data.split(",")
+    result = 0
+    for i in range(len(temp)):
+        result = result + temp[i]
+        if i = len(temp)-1:
+            result += ","
     return result
