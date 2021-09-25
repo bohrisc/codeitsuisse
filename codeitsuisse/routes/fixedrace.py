@@ -25,9 +25,9 @@ def fixedrace():
         result += "Regenia Rathburn,"
         temp2 = temp.remove("Regenia Rathburn")
     random.shuffle(temp2)
-    for i in range(len(temp)):
-        result += temp[i]
-        if i == len(temp)-1:
+    for i in range(len(temp2)):
+        result += temp2[i]
+        if i == len(temp2)-1:
             pass
         else:
             result += ","
